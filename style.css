@@ -1,1 +1,179 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
+body{
+font-family:'Syne',sans-serif;
+background:#050816;
+color:#e6edf3;
+line-height:1.6;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+background:#050816cc;
+backdrop-filter:blur(10px);
+z-index:100;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+}
+
+.logo{
+color:#2f81f7;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+padding:0 10%;
+}
+
+.hero h1{
+font-size:4rem;
+}
+
+.hero h2{
+color:#2f81f7;
+height:40px;
+}
+
+.tag{
+color:#2f81f7;
+font-family:'DM Mono';
+}
+
+.hero p{
+max-width:600px;
+margin:20px 0;
+}
+
+.buttons{
+display:flex;
+gap:15px;
+}
+
+.btn{
+padding:12px 25px;
+background:#2f81f7;
+color:white;
+border-radius:30px;
+text-decoration:none;
+}
+
+.outline{
+background:transparent;
+border:1px solid #2f81f7;
+}
+
+.section{
+padding:100px 10%;
+}
+
+.section h2{
+font-size:2.5rem;
+margin-bottom:30px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+}
+
+.skill{
+padding:20px;
+background:#111827;
+border-radius:15px;
+text-align:center;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111827;
+border-radius:20px;
+padding:20px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px #0008;
+}
+
+.card img{
+width:100%;
+border-radius:15px;
+}
+
+.card a{
+color:#2f81f7;
+text-decoration:none;
+}
+
+.contact{
+display:flex;
+gap:20px;
+}
+
+.contact a{
+background:#2f81f7;
+padding:12px 25px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+}
+
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:none;
+}
+
+@media(max-width:700px){
+
+nav ul{
+display:none;
+}
+
+.hero h1{
+font-size:3rem;
+}
+
+}
