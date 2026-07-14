@@ -1,123 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AD | Developer Portfolio</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&family=DM+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AD | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+<div class="blob blob-one"></div>
+<div class="blob blob-two"></div>
+<div class="grid"></div>
+
 <header>
-<nav>
-<h2 class="logo">AD</h2>
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
+    <nav>
+        <div class="logo">AD</div>
+
+        <ul id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="menu" id="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
 </header>
 
-<section class="hero">
-<div class="hero-content">
-<p class="tag">Hello, I'm</p>
-<h1>AD</h1>
-<h2><span id="typing"></span></h2>
-<p>
-Java Developer building applications and QA Automation enthusiast improving software quality.
-</p>
+<main>
 
-<div class="buttons">
-<a href="#projects" class="btn">View Projects</a>
-<a href="#contact" class="btn outline">Contact</a>
-</div>
-</div>
+<section id="hero">
+    <h1>Software Engineer & QA Enthusiast</h1>
+    <p>
+        I build web applications, automate software testing,
+        and create reliable digital experiences through
+        clean code and quality engineering.
+    </p>
 </section>
 
-<section id="about" class="section reveal">
-<h2>About Me</h2>
-<p>
-I am an IT graduate passionate about software development, automation testing, and building practical applications.
-I enjoy creating backend systems using Java and Spring Boot while exploring QA automation tools like Selenium and Playwright.
-</p>
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am an IT graduate focused on software engineering
+        and quality assurance.
+    </p>
+
+    <p>
+        My experience includes developing Java Spring Boot
+        applications, designing responsive interfaces,
+        and creating automation testing frameworks using
+        Selenium and Playwright.
+    </p>
+
+    <p>
+        I enjoy solving problems, improving software quality,
+        and building applications that provide real value
+        to users.
+    </p>
 </section>
 
-<section id="skills" class="section reveal">
-<h2>Skills</h2>
+<section id="skills">
+    <h2>Skills</h2>
 
-<div class="skills">
-<div class="skill">Java</div>
-<div class="skill">Spring Boot</div>
-<div class="skill">Python</div>
-<div class="skill">C++</div>
-<div class="skill">JavaScript</div>
-<div class="skill">HTML/CSS</div>
-<div class="skill">MySQL</div>
-<div class="skill">Selenium</div>
-<div class="skill">Playwright</div>
-<div class="skill">Git</div>
-</div>
+    <div class="skills-container">
+        <div class="skill-card">
+            <h3>Backend</h3>
+            <p>
+                Java<br>
+                Spring Boot<br>
+                REST API<br>
+                MySQL
+            </p>
+        </div>
 
+        <div class="skill-card">
+            <h3>Testing</h3>
+            <p>
+                Selenium<br>
+                Playwright<br>
+                JUnit<br>
+                TestNG
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Frontend</h3>
+            <p>
+                HTML<br>
+                CSS<br>
+                JavaScript<br>
+                Figma
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Tools</h3>
+            <p>
+                Git<br>
+                GitHub<br>
+                Postman<br>
+                IntelliJ IDEA
+            </p>
+        </div>
+    </div>
 </section>
 
-<section id="projects" class="section reveal">
-<h2>Projects</h2>
+<section id="projects">
+    <h2>Projects</h2>
 
-<div class="projects">
+    <div class="project-card">
+        <h3>Employee Management System</h3>
+        <p>
+            Employee Management System built using
+            Spring Boot, MySQL, and JavaScript.
+        </p>
+    </div>
 
-<div class="card">
-<img src="assets/images/bookhaven.png">
-<h3>BookHaven</h3>
-<p>Book management system built with Spring Boot, MySQL, and Java.</p>
-<a href="#">View Project →</a>
-</div>
+    <div class="project-card">
+        <h3>Book Management System</h3>
+        <p>
+            Book management platform with backend API,
+            database integration, and responsive UI.
+        </p>
+    </div>
 
-<div class="card">
-<img src="assets/images/emptrack.png">
-<h3>EmpTrack</h3>
-<p>Employee management system using REST API, Spring Boot, and MySQL.</p>
-<a href="#">View Project →</a>
-</div>
+    <div class="project-card">
+        <h3>Sliding Puzzle Game</h3>
+        <p>
+            Interactive browser puzzle game with
+            difficulty levels and Firebase leaderboard.
+        </p>
+    </div>
 
-<div class="card">
-<img src="assets/images/puzzle.png">
-<h3>Sliding Puzzle</h3>
-<p>Browser-based puzzle game with Firebase leaderboard integration.</p>
-<a href="#">View Project →</a>
-</div>
-
-<div class="card">
-<h3>Greenwich Automation</h3>
-<p>Website automation testing using Selenium, Java, and TestNG.</p>
-<a href="#">View Project →</a>
-</div>
-
-<div class="card">
-<h3>MiniBank Automation</h3>
-<p>UI testing framework created using Playwright and JavaScript.</p>
-<a href="#">View Project →</a>
-</div>
-
-</div>
+    <div class="project-card">
+        <h3>Automation Testing Framework</h3>
+        <p>
+            Automated testing framework using Selenium,
+            Playwright, TestNG, and Page Object Model.
+        </p>
+    </div>
 </section>
 
-<section id="contact" class="section reveal">
-<h2>Contact</h2>
-<p>Let's connect and build something together.</p>
+<section id="experience">
+    <h2>Experience</h2>
 
-<div class="contact">
-<a href="https://github.com/adpaisen">GitHub</a>
-<a href="#">LinkedIn</a>
-</div>
+    <p>
+        Working with test automation,
+        test cases, debugging,
+        and quality assurance practices.
+    </p>
 
+    <p>
+        Developed backend applications using Java,
+        Spring Boot, REST APIs, and databases.
+    </p>
+
+    <p>
+        Studied software development,
+        programming concepts,
+        and UI/UX design.
+    </p>
 </section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <p>
+        Interested in software development,
+        automation testing,
+        or collaboration?
+    </p>
+</section>
+
+</main>
 
 <footer>
-<p>© 2026 AD. Built with HTML, CSS & JavaScript.</p>
+    <p>© 2026 AD. All Rights Reserved.</p>
 </footer>
 
 <script src="script.js"></script>
